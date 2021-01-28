@@ -1,8 +1,8 @@
-# untheme
+# thptheme
 
-### Base theme for WordPress development
+### Theme for THP websites starting in 2021
 
-Untheme is a clean, empty base theme for developers. It supports and includes an example for navigation, a widget sidebar, pagination, and a custom post type - all without plugins!
+This is based on untheme, and further stripped down.
 
 ## Installation
 
