@@ -18,7 +18,7 @@
 	
 <a class="screen-reader-text" href="#content">Skip to content</a>
 
-<header class="site-header">
+<header class="site-header" id="myHeader">
 	<?php the_custom_logo();?>
 
 	<nav class="main-navigation">
@@ -30,6 +30,20 @@
 		?>
 	</nav>
 </header>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 <div id="content" class="site-content">
 	
