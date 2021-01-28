@@ -7,36 +7,42 @@
 body {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
-	color: #404040;
+	color: black;
 	background: white;
 	font-size: 1rem;
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro',sans-serif;
 	line-height: 1.6;
 }
 
 a {
-	color: #3BA9FC;
+	color: black;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #F7C243;
+	color: blue;
 }
 
-h1, h2, h3 {
-	color: #111;
-	line-height: 1.2;
+h1, h2{
+	font-family:Unna, serif;
+	color: #0000aa;
+	line-height: 1.6;
 }
 
 h1 {
 	margin-top: 0;
+	font-size:60px;
+}
+
+h2 {
+	font-size:45px;
 }
 
 .site-header {
 	max-width: 1000px;
 	margin: 0 auto;
-	color: #555;
-	padding: 20px 0;
+	color: white;
+	padding: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -54,6 +60,7 @@ h1 {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	font-transform: uppercase;
 }
 
 .main-navigation .menu a {
@@ -64,23 +71,16 @@ h1 {
 	font-weight: 600;
 }
 
-.main-navigation .menu a:hover {
-	color: #6EDEC4;
-}
-
 .site-content {
 	max-width: 1000px;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 2.5fr 1fr;
-	grid-gap: 10px;
-	min-height: calc(100vh - 205px);
+	display: flex;
 }
 
 .site-footer {
 	margin: 0 auto;
 	padding: 30px 15px;
-	background: #F8F8FB;
+	background: white;
 	border-top: 1px solid #e8e8f0;
 	text-align: center;
 }
@@ -95,22 +95,12 @@ h1 {
 }
 
 .widget {
-	padding: 2rem;
-	border-radius: 6px;
-	background: linear-gradient(to bottom right, #896EFA, #41A3CD);
-	color: white;
-	box-shadow: 5px 10px 20px rgba(0,0,0,.1);
-	margin-bottom: 20px;
 }
 
 .widget h2 {
-	margin-top: 0;
-	color: white;
-	font-size: 1rem;
 }
 
 .widget a {
-	color: rgba(255,255,255,.8);
 }
 
 .comment {
