@@ -1,7 +1,6 @@
 <?php
 /**
  * The header for the theme
- *
  */
 
 ?>
@@ -10,7 +9,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unna|Source+Sans+Pro">
 
 	<?php wp_head(); ?>
 </head>
