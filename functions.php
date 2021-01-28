@@ -4,10 +4,8 @@
  *
  */
 
-/*
- * Let WordPress manage the document title.
- */
 add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo' );
 
 /*
  * Enable support for Post Thumbnails on posts and pages.
@@ -29,18 +27,18 @@ add_theme_support( 'html5', array(
 /** 
  * Include primary navigation menu
  */
-function untheme_nav_init() {
+function thptheme_nav_init() {
 	register_nav_menus( array(
 		'menu-1' => 'Primary Menu',
 	) );
 }
-add_action( 'init', 'untheme_nav_init' );
+add_action( 'init', 'thptheme_nav_init' );
 
 /**
  * Register widget area.
  *
  */
-function untheme_widgets_init() {
+function thptheme_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Sidebar',
 		'id'            => 'sidebar-1',
@@ -51,23 +49,23 @@ function untheme_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'untheme_widgets_init' );
+add_action( 'widgets_init', 'thptheme_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function untheme_scripts() {
-	wp_enqueue_style( 'untheme-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'untheme-custom-style', get_template_directory_uri() . '/assets/css/style.css' );
-	wp_enqueue_script( 'untheme-scripts', get_template_directory_uri() . '/assets/js/scripts.js' );
+function thptheme_scripts() {
+	wp_enqueue_style( 'thptheme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'thptheme-custom-style', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_script( 'thptheme-scripts', get_template_directory_uri() . '/assets/js/scripts.js' );
 }
-add_action( 'wp_enqueue_scripts', 'untheme_scripts' );
+add_action( 'wp_enqueue_scripts', 'thptheme_scripts' );
 
-function untheme_create_post_custom_post() {
+function thptheme_create_post_custom_post() {
 	register_post_type('custom_post', 
 		array(
 		'labels' => array(
-			'name' => __('Custom Post', 'untheme'),
+			'name' => __('Custom Post', 'thptheme'),
 		),
 		'public'       => true,
 		'hierarchical' => true,
@@ -84,4 +82,4 @@ function untheme_create_post_custom_post() {
 		) 
 	));
 }
-add_action('init', 'untheme_create_post_custom_post'); // Add our work type
+add_action('init', 'thptheme_create_post_custom_post'); // Add our work type
