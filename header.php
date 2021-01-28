@@ -19,7 +19,7 @@
 <a class="screen-reader-text" href="#content">Skip to content</a>
 
 <header class="site-header">
-	<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+	<?php the_custom_logo();?>
 
 	<nav class="main-navigation">
 		<?php
