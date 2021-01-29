@@ -7,6 +7,7 @@ Additions include:
 * drop down menus css3
 * 3 footer responsive widget areas
 * sticky header
+* make sure style.css is not cached in enqueue function
 
 Removals include:
 * don't show title (anyway to make this a customization option?)
