@@ -3,7 +3,13 @@
 ### Theme for THP websites starting in 2021
 
 This is based on untheme, and further stripped down to get rid of comments and sidebar.
-Additions include: drop down menus, 3 footer responsive widget areas
+Additions include: 
+* drop down menus css3
+* 3 footer responsive widget areas
+* sticky header
+
+Removals include:
+* don't show title (anyway to make this a customization option?)
 
 ## Installation
 
