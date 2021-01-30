@@ -27,6 +27,7 @@
 			'theme_location' => 'menu-1',
 			'menu_id'        => 'primary-menu',
 		) );
+		wp_nav_menu( array( ‘theme_location’ => ‘primary mobile’, ‘menu_class’ => ‘nav-menu’ ) ); // responsive mobile menu
 		?>
 	</nav>
 </header>
