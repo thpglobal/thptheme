@@ -29,9 +29,9 @@ function thptheme_nav_init() {
 add_action( 'init', 'thptheme_nav_init' );
 
 function extra_setup() {
-	register_nav_menu (‘primary mobile’, __( ‘Navigation Mobile’, ‘thptheme’ ));
+	register_nav_menu ('primary mobile', __( 'Navigation Mobile', 'thptheme' ));
 }
-add_action( ‘after_setup_theme’, ‘extra_setup’ );
+add_action( 'after_setup_theme', 'extra_setup' );
 
 
 
