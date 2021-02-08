@@ -3,42 +3,23 @@
  * Functions and definitions
  *
  */
-
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo' );
 add_theme_support( 'post-thumbnails' );
 
-/*
- * Switch default core markup for search form, comment form, and comments
- * to output valid HTML5.
- */
-add_theme_support( 'html5', array(
-	'search-form',
-	'gallery',
-	'caption',
-) );
 
-/** 
- * Include primary navigation menu
- */
-function thptheme_nav_init() {
-	register_nav_menus( array(
-		'menu-1' => 'Primary Menu',
-	) );
+// Add search to main navigation
+function add_search_form($items, $args) {
+          if( $args->theme_location == 'menu-1' ){
+          $items = '<li class="menu-item">'
+			  . '<a href="javascript:thpsearch();">'
+			  . '<span class="dashicons dashicons-search"></span></a>'
+ 			. '</li>'.$items;
+          }
+        return $items;
 }
-add_action( 'init', 'thptheme_nav_init' );
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 
-function extra_setup() {
-	register_nav_menu ('primary mobile', __( 'Navigation Mobile', 'thptheme' ));
-}
-add_action( 'after_setup_theme', 'extra_setup' );
-
-
-
-/**
- * Register widget area.
- *
- */
 function register_widget_areas() {
 
   register_sidebar( array(
@@ -75,6 +56,45 @@ function register_widget_areas() {
 add_action( 'widgets_init', 'register_widget_areas' );
 
 
+/*
+ * Switch default core markup for search form, comment form, and comments
+ * to output valid HTML5.
+ */
+add_theme_support( 'html5', array(
+	'search-form',
+	'gallery',
+	'caption',
+) );
+
+/** 
+ * Include primary navigation menu
+ */
+function thptheme_nav_init() {
+	register_nav_menus( array(
+		'menu-1' => 'Primary Menu'
+	) );
+}
+add_action( 'init', 'thptheme_nav_init' );
+
+
+
+
+/**
+ * Register widget area.
+ *
+ */
+function thptheme_widgets_init() {
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar-1',
+		'description'   => 'Add widgets',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'thptheme_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -108,3 +128,7 @@ function thptheme_create_post_custom_post() {
 	));
 }
 add_action('init', 'thptheme_create_post_custom_post'); // Add our work type
+function ww_load_dashicons(){
+   wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'ww_load_dashicons', 999);
