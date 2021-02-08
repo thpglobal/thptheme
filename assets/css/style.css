@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+
 body {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
@@ -31,6 +32,10 @@ h1, h2{
 	color: #0000aa;
 }
 
+h3, h4{
+	color: #0000aa; font-size:20px; font-weight:bold; line-height:20px;
+}
+
 h1 {
 	margin-top: 0;
 	font-size: 60px;
@@ -43,15 +48,15 @@ h2 {
 .site-header {
 	position: -webkit-sticky;
 	position: sticky;
+	background-color:white;
 	top: 0;
 	max-width: 1000px;
 	margin: 0 auto;
-	background-color: white;
 	padding: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid #e8e8f0;
+	border-bottom: 0;
 	margin-bottom: 35px;
 }
 
@@ -60,25 +65,18 @@ h2 {
 	font-size: 1.4rem;
 }
 
-.primary-mobile-nav {
-display: none;
-}
-@media (max-width: 643px){
-	.primary-nav {
-	display: none;
-	}
-	.primary-mobile-nav {
-	display: block;
-	}
-}
-
-
 .main-navigation .menu {
 	list-style: none;
 	margin: 0;
-	padding: 0;
-	display: flex;
+	padding: 0;	display: flex;
 	font-transform: uppercase;
+}
+#hamburger {display:none;}
+
+@media screen and (max-width: 600px){
+	.main-navigation .menu {display:none;}
+	#hamburger {display:block;}
+	.site-content {padding:1em;}
 }
 
 .main-navigation .menu a {
@@ -120,11 +118,11 @@ display: none;
 }
 
 .site-footer {
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 30px 15px;
 	background: white;
 	border-top: 1px solid #e8e8f0;
-	text-align: center;
 }
 
 .entry {
@@ -134,11 +132,18 @@ display: none;
 .entry-header a {
 }
 
+.button {border-style:solid; border-width:2px; border-color: #0000aa; padding:10px 17px; 
+	font-size:15px; font-weight:bold; color:#0000aa; text-transform:uppercase;}
+.button:hover {background-color: #0000aa; color:white;}
+.actionbar {width:100%; font-family:Unna; background-color:#0000aa; color:white; font-size: 30px; padding:30px; text-align:center;}
+
 .widget {
 }
 
-.widget h2 {
-}
+.footer1 {padding-right:30px;}
+.footer2 {padding-right:30px;padding-left:30px;border-left-style:solid;
+	border-width:1px;border-right-style:solid;border-color:silver;}
+.footer3 {padding-left:30px;}
 
 .widget a {
 }
