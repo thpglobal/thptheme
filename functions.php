@@ -6,6 +6,12 @@
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo' );
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'editor-color-palette',
+    '#0000aa',
+    '#00bfba',				
+    '#ffca05',
+    '#ff6666',
+  );
 
 
 // Add search to main navigation
