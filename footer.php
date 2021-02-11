@@ -22,7 +22,7 @@
 </div>
 
 <p>	  
-	<a href=/policies>Policies & Disclosures</a> | <a href=/press>Press & Media</a> | <a href=/terms>Terms of Use</a> | <a href=/wp-admin>Admin</a>
+	<a href=https://thp.org/policies>Policies & Disclosures</a> | <a href=https://thp.org/press>Press & Media</a> | <a href=https://thp.org/terms>Terms of Use</a> | <a href=/wp-admin>Admin</a>
 	</p>
 </footer>
 
