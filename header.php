@@ -33,7 +33,7 @@
 		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
 	</nav>
 	<a id="hamburger" 
-			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span></a>
+			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span>&nbsp;</a>
 </header>
 		<div id='thp-search' style='text-align:center;display:none;'>
 			<?php get_search_form();?>
