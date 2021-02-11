@@ -21,9 +21,10 @@
   </div>
 </div>
 
-<p>	  
-	<a href=https://thp.org/policies>Policies & Disclosures</a> | <a href=https://thp.org/press>Press & Media</a> | <a href=https://thp.org/terms>Terms of Use</a> | <a href=/wp-admin>Admin</a>
-	</p>
+<a href=https://thp.org/policies target=_blank>Policies & Disclosures</a> | 
+	<a href=https://thp.org/press target=_blank>Press & Media</a> | 
+	<a href=https://thp.org/terms-of-use target=_blank>Terms of Use</a> | <a href=/wp-admin>Admin</a>
+
 </footer>
 
 </body>
