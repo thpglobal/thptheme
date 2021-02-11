@@ -47,6 +47,7 @@ h2 {
 
 .site-header {
 	position: sticky;
+	top:0;
 	background-color:white;
 	max-width: 1000px;
 	margin: 0 auto;
