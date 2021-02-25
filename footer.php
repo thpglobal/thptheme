@@ -26,6 +26,6 @@
 	<a href=https://thp.org/terms-of-use target=_blank>Terms of Use</a> | <a href=/wp-admin>Admin</a>
 
 </footer>
-<?php wp_footer(); ?>.
+<?php wp_footer(); ?>
 </body>
 </html>
