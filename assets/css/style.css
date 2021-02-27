@@ -4,6 +4,16 @@
 	box-sizing: border-box;
 }
 
+.has-cobalt-background-color { background-color: #0000aa;}
+.has-cobalt-color { color: #0000aa;}
+.has-aqua-background-color { background-color: #0000aa;}
+.has-aqua-color { color: #0000aa;}
+.has-white-background-color { background-color: #ffffff;}
+.has-white-color { color: #ffffff;}
+.has-yellow-background-color { background-color: #ffca05;}
+.has-yellow-color { color: #ffca05;}
+.has-salmon-background-color { background-color: #0000aa;}
+.has-salmon-color { color: #0000aa;}
 
 body {
 	-webkit-font-smoothing: antialiased;
