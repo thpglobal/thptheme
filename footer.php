@@ -6,7 +6,7 @@
 ?>
 </div> <!-- close the page container -->
 <div class="actionbar">
-		Take Action Now!
+	Take Action Now!<a class=button2 href=/donate>Donate!</a>
 </div>
 <footer class="site-footer">
 <div class="wp-block-columns">
@@ -20,6 +20,7 @@
 	<?php dynamic_sidebar( 'footer_area_three' ); ?>
   </div>
 </div>
+<?php dynamic_sidebar( 'footer_area_four' ); ?>
 
 <a href=https://thp.org/policies target=_blank>Policies & Disclosures</a> | 
 	<a href=https://thp.org/press target=_blank>Press & Media</a> | 
