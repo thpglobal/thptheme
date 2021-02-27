@@ -19,6 +19,40 @@ function add_search_form($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 
+
+/* custom colors
+*/
+function wpdc_add_custom_gutenberg_color_palette() {
+	add_theme_support(
+		'editor-color-palette',
+		[
+			[
+				'name'  => esc_html__( 'Cobalt', 'wpdc' ),
+				'slug'  => 'Cobalt',
+				'color' => '#0000aa',
+			],
+			[
+				'name'  => esc_html__( 'Aqua', 'wpdc' ),
+				'slug'  => 'Aqua',
+				'color' => '#00bfba',
+			],
+			[
+				'name'  => esc_html__( 'Salmon', 'wpdc' ),
+				'slug'  => 'Salmon',
+				'color' => '#ffff66',
+			],
+			[
+				'name'  => esc_html__( 'Yellow', 'wpdc' ),
+				'slug'  => 'Yellow',
+				'color' => '#ffca05',
+			],
+
+		]
+	);
+}
+add_action( 'after_setup_theme', 'wpdc_add_custom_gutenberg_color_palette' );
+
+
 function register_widget_areas() {
 
   register_sidebar( array(
