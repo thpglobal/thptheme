@@ -46,7 +46,11 @@ function wpdc_add_custom_gutenberg_color_palette() {
 				'slug'  => 'Yellow',
 				'color' => '#ffca05',
 			],
-
+			[
+				'name'  => esc_html__( 'White', 'wpdc' ),
+				'slug'  => 'White',
+				'color' => '#ffffff',
+			],
 		]
 	);
 }
