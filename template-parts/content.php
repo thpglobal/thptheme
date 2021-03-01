@@ -16,9 +16,10 @@
 	</header>
 
 	<div class="entry-content wp-block-columns">
-	  <div class="wp-block-column">">
+	  <div class="wp-block-column" style="flex-basis:70%">
 		<?php the_content(); ?>
 		</div>
-	  <div class="wp-block-column sidebar">
+	  <div class="wp-block-column" style="flex-basis:30%">
+		  <?php dynamic_sidebar( 'sidebar-1' );?>
 	</div>
 </article>
