@@ -3,7 +3,7 @@
 *::after {
 	box-sizing: border-box;
 }
-.flex {display:flex;}
+.fit {width:100%; max-width:100%; height:auto; object-fit:contain;}
 .has-cobalt-background-color { background-color: #0000aa;}
 .has-cobalt-color { color: #0000aa;}
 .has-aqua-background-color { background-color: #00bfba;}
@@ -25,7 +25,7 @@ body {
 }
 
 p { 
-	font-size: 17px;
+	font-size: 10px;
 	line-height: 1.6;
 }
 
