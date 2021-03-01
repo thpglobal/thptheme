@@ -97,6 +97,15 @@ register_sidebar( array(
     'before_title'  => '<h4>',
     'after_title'   => '</h4>',
   ));
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar-1',
+		'description'   => 'Add widgets',
+		'before_widget' => '<section class="sidebar">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 
 add_action( 'widgets_init', 'register_widget_areas' );
