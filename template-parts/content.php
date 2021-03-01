@@ -15,7 +15,10 @@
 		} ?>
 	</header>
 
-	<div class="entry-content">
+	<div class="entry-content wp-block-columns">
+	  <div class="wp-block-column">">
 		<?php the_content(); ?>
+		</div>
+	  <div class="wp-block-column sidebar">
 	</div>
 </article>
