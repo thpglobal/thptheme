@@ -7,6 +7,7 @@ Additions include:
 * drop down menus css3
 * action bar in footer
 * 3 footer responsive widget areas
+* change the sidebar in posts to be in a 30% column using standard wordpress classes
 * 1 footer full-page-width header below that for validations
 * countup class - cf https://jshakespeare.com/simple-count-up-number-animation-javascript-react/
 * sticky header
@@ -28,4 +29,4 @@ For optimized WordPress settings, follow these steps.
 1. In "Settings -> Permalinks" click "Post name" and save.
 1. In "Settings -> Media" uncheck "Organize my uploads into month- and year-based folders" and save.
 1. In "Appearance -> Menus" click "Save Menu" and check "Display location - Primary Menu".
-1. In "Appearance -> Widgets" drag a widget to "Sidebar" to view them in action.
+1. In "Appearance -> Widgets" drag a widget to any of the widget areas to view them in action.
