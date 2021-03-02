@@ -3,6 +3,7 @@
 *::after {
 	box-sizing: border-box;
 }
+.countup {text-align:center;font-family:sans-serif; font-size:50px;}
 .fit {width:100%; max-width:100%; height:auto; object-fit:contain;}
 .has-cobalt-background-color { background-color: #0000aa;}
 .has-cobalt-color { color: #0000aa;}
