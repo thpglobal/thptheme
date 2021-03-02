@@ -1,9 +1,3 @@
-// Enable the countups
-const animationDuration = 2000;
-const frameDuration = 1000 / 60;
-const totalFrames = Math.round( animationDuration / frameDuration );
-// An ease-out function that slows the count as it progresses
-const easeOutQuad = t => t * ( 2 - t );
 
 // The animation function, which takes an Element
 const animateCountUp = el => {
@@ -24,6 +18,13 @@ const animateCountUp = el => {
 
 // Run the animation on all elements with a class of ‘countup’
 const runAnimations = () => {
+	// Enable the countups
+	const animationDuration = 2000;
+	const frameDuration = 1000 / 60;
+	const totalFrames = Math.round( animationDuration / frameDuration );
+	// An ease-out function that slows the count as it progresses
+	const easeOutQuad = t => t * ( 2 - t );
+
 	const countupEls = document.querySelectorAll( '.countup' );
 	countupEls.forEach( animateCountUp );
 };
