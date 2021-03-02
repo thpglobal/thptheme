@@ -27,3 +27,4 @@ const runAnimations = () => {
 	const countupEls = document.querySelectorAll( '.countup' );
 	countupEls.forEach( animateCountUp );
 };
+window.onload=runAnimations;
