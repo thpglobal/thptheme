@@ -5,7 +5,10 @@
 This is based on untheme, and further stripped down to get rid of comments and sidebar.
 Additions include: 
 * drop down menus css3
+* action bar in footer
 * 3 footer responsive widget areas
+* 1 footer full-page-width header below that for validations
+* countup class - cf https://jshakespeare.com/simple-count-up-number-animation-javascript-react/
 * sticky header
 * make sure style.css is not cached in enqueue function
 
@@ -14,8 +17,9 @@ Removals include:
 
 ## Installation
 
-1. Upload the contents of this repository to a new directory in `wp-content/themes`.
-1. Click "Activate".
+* download the zip file
+* upload it as the theme
+* when updating, just upload again and it will ask whether you mean to replace the old one (yes, you do!)
 
 ## Settings
 
