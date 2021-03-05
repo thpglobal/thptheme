@@ -147,17 +147,18 @@ h2 {
 
 .entry-header a {
 }
-
+/*
 .button, .wp-block-button__link {border-style:solid; border-width:2px; border-color: #0000aa; padding:10px 17px; 
 	font-size:15px; font-weight:bold; color:#0000aa; text-transform:uppercase; background-color:white; border-radius:0;}
 .button:hover, .wp-block-button__link:hover {background-color: #0000aa; color:white;}
-.actionbar {width:100%; font-family:Unna; background-color:#0000aa; color:white; font-size: 30px; padding:30px; text-align:center;}
 .button2 {border-style:solid; border-width:2px; border-color: #fff; padding:10px 17px; 
 	font-family:'Source Sans Pro'; font-size:15px; font-weight:bold; color:#fff; text-transform:uppercase; border-radius:0;}
 .button2:hover {color:#0000aa; background-color:white;}
 
 .widget {
 }
+*/
+.actionbar {width:100%; font-family:Unna; background-color:#0000aa; color:white; font-size: 30px; padding:30px; text-align:center;}
 
 .footer1 {padding-right:30px;}
 .footer2 {padding-right:30px;padding-left:30px;border-left-style:solid;
