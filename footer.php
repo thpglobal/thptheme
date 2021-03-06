@@ -5,7 +5,9 @@
  */
 ?>
 </div> <!-- close the page container -->
-<div class="actionbar">Make change happen. Invest in people. &nbsp;<a class=button2 href=/donate>Give now!</a></div>
+<div class="actionbar">Make change happen. Invest in people. &nbsp;
+	<a class="wp-block-button__link has-white-color has-text-color no-border-radius">And Yet More</a>
+</div>
 <footer class="site-footer">
 <div class="wp-block-columns">
   <div class="wp-block-column footer1">
