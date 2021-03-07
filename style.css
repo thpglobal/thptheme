@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/thptheme
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 0.7.2
+Version: 0.7.3
 License: GNU General Public License v2 or later
 Text Domain: thptheme
 */
@@ -26,6 +26,23 @@ Text Domain: thptheme
 *::before,
 *::after {
 	box-sizing: border-box;
+}
+
+/* Current customizations being tinkered with */
+
+wp-block-button .wp-block-button__link{
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius:0;	
+	text-transform:uppercase;
+	font-weight:bold;
+	border: 3px solid #0000aa;
+	background-color:white;
+	color:#0000aa;
+}
+.wp-block-button .wp-block-button__link:hover{
+	background-color:#0000aa;
+	color:white;
 }
 .hovercw:hover {background-color:#0000aa; color:white;}
 .hoverwc:hover {background-color:white; border: 2px solid #0000aa; color:#0000aa;}
