@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/thptheme
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 0.7.4
+Version: 0.7.5
 License: GNU General Public License v2 or later
 Text Domain: thptheme
 */
@@ -49,6 +49,7 @@ Text Domain: thptheme
 	border-radius:0;
 	text-transform:uppercase;
 	font-weight:bold;
+	font-size:20px;
 	font-family:"Source Sans Pro";
 	background-color:inherit;
 	color:white;
