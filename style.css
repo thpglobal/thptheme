@@ -27,6 +27,8 @@ Text Domain: thptheme
 *::after {
 	box-sizing: border-box;
 }
+.hovercw:hover {background-color:#0000aa; color:white;}
+.hoverwc:hover {background-color:white; border: 2px solid #0000aa; color:#0000aa;}
 .countup {text-align:center;font-family:sans-serif; font-size:50px;}
 .fit {width:100%; max-width:100%; height:auto; object-fit:contain;}
 .has-cobalt-background-color { background-color: #0000aa;}
@@ -54,13 +56,8 @@ p {
 	line-height: 1.6;
 }
 
-a {
-	text-decoration: none;
-}
+a { text-decoration: none; }
 
-a:hover {
-	color: #cb4335;
-}
 
 h1, h2{
 	font-family: 'Unna', serif;
@@ -159,8 +156,7 @@ h2 {
 
 .entry { margin-bottom: 35px; }
 .actionbar {width:100%; font-family:Unna; background-color:#0000aa; color:white; font-size: 30px; padding:30px; text-align:center;}
-.hovercw:hover {background-color:#0000aa; color:white;}
-.hoverwc:hover {background-color:#white; border: 2px solid #0000aa; color:#0000aa;}
+
 
 .footer1 {padding-right:30px;}
 .footer2 {padding-right:30px;padding-left:30px;border-left-style:solid;
