@@ -44,6 +44,7 @@ Text Domain: thptheme
 	background-color:#0000aa;
 	color:white;
 }
+.btn1 {background-color:#0000aa !important; color:white !important;}
 .btn2 {
 	padding: 10px 20px;
 	border-radius:0;
