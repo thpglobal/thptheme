@@ -5,13 +5,15 @@
 This is based on untheme, and further stripped down to get rid of comments and sidebar.
 Additions include: 
 * drop down menus css3
+* responsive hamburger menu
 * action bar in footer
-* 3 footer responsive widget areas
+* 4 footer responsive widget areas
 * change the sidebar in posts to be in a 30% column using standard wordpress classes
 * 1 footer full-page-width header below that for validations
 * countup class - cf https://jshakespeare.com/simple-count-up-number-animation-javascript-react/
 * sticky header
 * make sure style.css is not cached in enqueue function
+* integrate all css in the default style.css
 
 Removals include:
 * don't show title (anyway to make this a customization option?)
