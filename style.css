@@ -141,6 +141,7 @@ h2 {
 
 @media screen and (max-width: 600px){
 	.main-navigation .menu {display:none;}
+	.vanish {display:none;}
 	#hamburger {display:block;}
 	.site-content {padding:1em;}
 }
