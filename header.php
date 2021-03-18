@@ -33,6 +33,12 @@
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
 	</nav>
+	<a href="https://secure3.convio.net/thp/site/Donation2?df_id=2784&mfc_pref=T&2784.donation=form1&_ga=2.31951038.1028833229.1616093610-1097332562.1614266696">
+	<svg class="vanish" height="125" width="125">
+	<g><rect x="0" y="0" width="125" height="125" fill="#0000aa"></rect>
+	<text x=60 y="65" dominant-baseline="middle" text-anchor="middle" font-family="Unna" font-size="20" font-weight="bold" fill="white">Give Now</text>
+	</g></svg></a>
+
 	<a id="hamburger" 
 			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span>&nbsp;</a>
 </header>
