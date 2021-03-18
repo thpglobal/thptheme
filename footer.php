@@ -5,8 +5,8 @@
  */
 ?>
 </div> <!-- close the page container -->
-<div class="actionbar">Make change happen. Invest in people. &nbsp;
-	<a class="btn2">Give Now</a>
+
+<div class="actionbar">
 </div>
 <footer class="site-footer">
 <div class="wp-block-columns">
@@ -23,9 +23,6 @@
 	<p>&nbsp;</p>
 
 	<?php dynamic_sidebar( 'footer_area_four' ); ?>
-<a href=https://thp.org/policies target=_blank>Policies & Disclosures</a> | 
-	<a href=https://thp.org/press target=_blank>Press & Media</a> | 
-	<a href=https://thp.org/terms-of-use target=_blank>Terms of Use</a> | <a href=/wp-admin>Admin</a>
 
 </footer>
 <?php wp_footer(); ?>
