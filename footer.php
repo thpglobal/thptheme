@@ -7,7 +7,7 @@
 </div> <!-- close the page container -->
 
 <div class="actionbar">
-	<?php dynamic_sidebar( 'call-to-action' ); ?>
+	<?php dynamic_sidebar( 'call_to_action' ); ?>
 </div>
 <footer class="site-footer">
 <div class="wp-block-columns">
