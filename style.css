@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/thptheme
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 Text Domain: thptheme
 */
@@ -143,6 +143,7 @@ h2 {
 	margin: 0;
 	padding: 0;	display: flex;
 	font-transform: uppercase;
+	font-size:16px;
 }
 #hamburger {display:none;}
 
@@ -160,6 +161,8 @@ h2 {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
+	font-size:16px;
+
 }
 
 /* dropdowns */
