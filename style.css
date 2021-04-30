@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/thptheme
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 Text Domain: thptheme
 */
@@ -29,6 +29,13 @@ Text Domain: thptheme
 }
 
 /* Current customizations being tinkered with */
+
+blockquote {
+    margin: 20px 0 30px;
+    border-left: 5px solid;
+    padding-left: 20px;
+	color: 
+}
 
 .wp-block-button .wp-block-button__link{
 	display: inline-block;
@@ -85,7 +92,7 @@ body {
 	font-family: 'Source Sans Pro',sans-serif;
 }
 
-p { 
+p, li { 
 	font-size: 20px;
 	line-height: 1.6;
 }
@@ -93,7 +100,7 @@ p {
 a { text-decoration: none; }
 
 
-h1, h2{
+h1, h2, blockquote {
 	font-family: 'Unna', serif;
 	font-weight: normal;
 	color: #0000aa;
