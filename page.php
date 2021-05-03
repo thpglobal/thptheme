@@ -9,18 +9,29 @@ get_header();
 
 <main id="main" class="site-main" role="main">
 
-	<?php
-	while ( have_posts() ) : the_post();
+<?php	while ( have_posts() ) : the_post(); ?>
+	
+<article id="post-<?php the_ID(); ?>" class="entry">
+	<header class="entry-header">
+		<?php if ( has_post_thumbnail() ) { 
+			echo("<div style='position:relative;'>\n");
+			$thpurl=get_the_post_thumbnail_url();
+			echo("<img src='$thpurl' width=100% height=auto>");
+			echo("<h1 class='overlay-title'>");
+			the_title();
+			echo("</h1></div>\n");
+		}else{
+			echo("<h1>"); the_title(); echo("</h1>\n");
+		} 
+		?>
+	</header>
 
-		get_template_part( 'template-parts/content-open', 'page' );
+	<div class="entry-content">
+		<?php the_content(); ?>
+	</div>
+</article>
 
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
-
-	endwhile; 
-	?>
+<?php	endwhile; ?>
 
 </main>
 
