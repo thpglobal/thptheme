@@ -12,7 +12,7 @@
 			echo("<div style='position:relative;'>\n");
 			$thpurl=get_the_post_thumbnail_url();
 			echo("<img src='$thpurl' width=100% height=auto>");
-			echo("<h1 style='position:absolute; bottom:-45px; left:0; background-color:white;'>");
+			echo("<h1 class='overlay-title'>");
 			the_title();
 			echo("</h1></div>\n");
 		}else{
