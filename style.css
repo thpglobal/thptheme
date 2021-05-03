@@ -30,6 +30,8 @@ Text Domain: thptheme
 
 /* Current customizations being tinkered with */
 
+.overlay-title {position:absolute; bottom:-45px; left:0; background-color:white; padding-right:10px;}
+
 blockquote {
     margin: 20px 0 30px;
     border-left: 5px solid;
