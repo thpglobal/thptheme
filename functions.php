@@ -170,28 +170,6 @@ function thptheme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'thptheme_scripts' );
 
-function thptheme_create_post_custom_post() {
-	register_post_type('custom_post', 
-		array(
-		'labels' => array(
-			'name' => __('Custom Post', 'thptheme'),
-		),
-		'public'       => true,
-		'hierarchical' => true,
-		'supports'     => array(
-			'title',
-			'editor',
-			'excerpt',
-			'custom-fields',
-			'thumbnail',
-		), 
-		'taxonomies'   => array(
-				'post_tag',
-				'category',
-		) 
-	));
-}
-add_action('init', 'thptheme_create_post_custom_post'); // Add our work type
 function ww_load_dashicons(){
    wp_enqueue_style('dashicons');
 }
