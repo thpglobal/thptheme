@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 	<script>
 		function thpmobile() {
-			document.getElementById('menu-menu1').style.display='block';
+			document.getElementById('menu-primary').style.display='block';
 		}
 		function thpsearch() {
 			document.getElementById('thp-search').style.display='block';			
@@ -31,7 +31,7 @@
 	<?php the_custom_logo();?>
 
 	<nav class="main-navigation">
-		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
+		<?php wp_nav_menu( array('theme_location' => 'menu-1','menu_id'=>'menu-primary') ); ?>
 	</nav>
 	<a href="/give-now">
 	<svg class="vanish" height="125" width="125">
