@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 	<script>
 		function thpmobile() {
-			document.getElementById('menu-primary').style.display='block';
+			document.getElementById('menu-menu1').style.display='block';
 		}
 		function thpsearch() {
 			document.getElementById('thp-search').style.display='block';			
