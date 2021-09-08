@@ -46,5 +46,5 @@
 	<div class="gcse-search"></div>
 </div>
 <div id="content" class="site-content">
-	<p><?php echo get_theme_mod( 'test_setting' ); ?></p>
+	<p><?php echo get_theme_mod( 'give_now_text' ); ?></p>
 	

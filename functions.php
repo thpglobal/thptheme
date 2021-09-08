@@ -80,20 +80,20 @@ function thptheme_customize_register($wp_customize){
   $wp_customize->add_section('give_now_box',array(
     'title'=>'Give Now Box',
     'description'=>'URL settings',
-    'panel'=>'thpetheme_option_panel'
+    'panel'=>'thptheme_option_panel'
   ));
-  $wp_customize->add_setting( 'test_setting', array(
-      'default'        => 'value_xyz',
+  $wp_customize->add_setting( 'give_now_text', array(
+      'default'        => 'Give Now',
       'capability'     => 'edit_theme_options',
       'type'           => 'theme_mod',
   ));
   $wp_customize->add_control( 'test_control', array(
-      'label'      => __('Text Test', 'themename'),
-      'section'    =>  'spacious_slider_number_section1',
-      'settings'   => 'test_setting',
+      'label'      => __('Text Test', 'thptheme'),
+      'section'    =>  'give_now_box',
+      'settings'   => 'give_now_text',
   ));
 }
-add_action('customize_register', 'theptheme_customize_register');
+add_action('customize_register', 'thptheme_customize_register');
 
 function register_widget_areas() {
 	register_sidebar( array(
