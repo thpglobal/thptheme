@@ -79,7 +79,6 @@ function thptheme_customize_register($wp_customize){
   ));
   $wp_customize->add_section('give_now_box',array(
     'title'=>'Give Now Box',
-    'description'=>'URL settings',
     'panel'=>'thptheme_option_panel'
   ));
   $wp_customize->add_setting( 'give_now_text', array(
@@ -87,11 +86,21 @@ function thptheme_customize_register($wp_customize){
       'capability'     => 'edit_theme_options',
       'type'           => 'theme_mod',
   ));
-  $wp_customize->add_control( 'test_control', array(
-      'label'      => __('Text Test', 'thptheme'),
+  $wp_customize->add_setting( 'give_now_url', array(
+    'default'        => 'https://thp.org/give-now',
+    'capability'     => 'edit_theme_options',
+    'type'           => 'theme_mod',
+));
+$wp_customize->add_control( 'give_text', array(
+      'label'      => __('Give Now Text', 'thptheme'),
       'section'    =>  'give_now_box',
       'settings'   => 'give_now_text',
   ));
+  $wp_customize->add_control( 'give_url', array(
+    'label'      => __('Give Now URL', 'thptheme'),
+    'section'    =>  'give_now_box',
+    'settings'   => 'give_now_url',
+));
 }
 add_action('customize_register', 'thptheme_customize_register');
 

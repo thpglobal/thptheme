@@ -1,6 +1,8 @@
 # thptheme
 
-### Theme for THP websites starting in 2021
+## Latest as of version 1.3 - Give Now box text and url settable in customizer
+
+## Theme for THP websites starting in 2021
 
 This is based on untheme, and further stripped down to get rid of comments and sidebar.
 Additions include: 
