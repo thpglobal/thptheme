@@ -33,7 +33,7 @@
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1','menu_id'=>'menu-primary') ); ?>
 	</nav>
-	<span id=givenow>dynamic_sidebar( 'givennow' )
+	<span id=givenow><?php dynamic_sidebar( 'givennow' );?></span>
 
 	<a id="hamburger" 
 			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span>&nbsp;</a>

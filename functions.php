@@ -74,6 +74,10 @@ add_action( 'after_setup_theme', 'wpdc_add_custom_gutenberg_color_palette' );
 
 
 function register_widget_areas() {
+  register_sidebar( array(
+    'name' => 'Give now box',
+    'id' => 'givenow'
+  ));
 	register_sidebar( array(
     'name'          => 'Call to Action Bar',
     'id'            => 'call_to_action',

@@ -32,3 +32,10 @@ For optimized WordPress settings, follow these steps.
 1. In "Settings -> Media" uncheck "Organize my uploads into month- and year-based folders" and save.
 1. In "Appearance -> Menus" click "Save Menu" and check "Display location - Primary Menu".
 1. In "Appearance -> Widgets" drag a widget to any of the widget areas to view them in action.
+
+# Give now box custom html in widget area
+```	<a href="/give-now">
+```	<svg class="vanish" height="125" width="125">
+```	<g><rect x="0" y="0" width="125" height="125" fill="#0000aa"></rect>
+```	<text x=60 y="65" dominant-baseline="middle" text-anchor="middle" font-family="Unna" font-size="20" font-weight="bold" fill="white">Give Now</text>
+```</g></svg></a>
