@@ -33,18 +33,14 @@
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1','menu_id'=>'menu-primary') ); ?>
 	</nav>
-	<a href="/give-now">
-	<svg class="vanish" height="125" width="125">
-	<g><rect x="0" y="0" width="125" height="125" fill="#0000aa"></rect>
-	<text x=60 y="65" dominant-baseline="middle" text-anchor="middle" font-family="Unna" font-size="20" font-weight="bold" fill="white">Give Now</text>
-	</g></svg></a>
+	<span id=givenow>dynamic_sidebar( 'givennow' )
 
 	<a id="hamburger" 
 			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span>&nbsp;</a>
 </header>
-		<div id='thp-search' style='text-align:center;display:none;'>
-			<?php get_search_form();?>
+		<div id='thp-search' class=site-content>
+		<script async src="https://cse.google.com/cse.js?cx=7c46083f52d5323d8"></script>
+		<div class="gcse-searchresults-only"></div>
 		</div>
-
 <div id="content" class="site-content">
 	
