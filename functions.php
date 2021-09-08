@@ -72,12 +72,21 @@ function wpdc_add_custom_gutenberg_color_palette() {
 }
 add_action( 'after_setup_theme', 'wpdc_add_custom_gutenberg_color_palette' );
 
+function thptheme_customize_register($wp_customize){
+  $wp_customize->add_setting( 'test_setting', array(
+      'default'        => 'value_xyz',
+      'capability'     => 'edit_theme_options',
+      'type'           => 'theme_mod',
+  ));
+  $wp_customize->add_control( 'test_control', array(
+      'label'      => __('Text Test', 'themename'),
+      'section'    =>  'spacious_slider_number_section1',
+      'settings'   => 'test_setting',
+  ));
+}
+add_action('customize_register', 'theptheme_customize_register');
 
 function register_widget_areas() {
-  register_sidebar( array(
-    'name' => 'Give now box',
-    'id' => 'givenow'
-  ));
 	register_sidebar( array(
     'name'          => 'Call to Action Bar',
     'id'            => 'call_to_action',
