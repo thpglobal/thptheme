@@ -73,6 +73,15 @@ function wpdc_add_custom_gutenberg_color_palette() {
 add_action( 'after_setup_theme', 'wpdc_add_custom_gutenberg_color_palette' );
 
 function thptheme_customize_register($wp_customize){
+  $wp_customize->add_panel('thptheme_option_panel',array(
+    'title'=>'THP Theme Options',
+    'description'=>'Customize the THP theme'
+  ));
+  $wp_customize->add_section('give_now_box',array(
+    'title'=>'Give Now Box',
+    'description'=>'URL settings',
+    'panel'=>'thpetheme_option_panel'
+  ));
   $wp_customize->add_setting( 'test_setting', array(
       'default'        => 'value_xyz',
       'capability'     => 'edit_theme_options',
