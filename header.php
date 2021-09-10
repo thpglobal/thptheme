@@ -34,12 +34,10 @@
 		<?php wp_nav_menu( array('theme_location' => 'menu-1','menu_id'=>'menu-primary') ); ?>
 	</nav>
 	<?php $gurl=get_theme_mod( 'give_now_url' );?>
+	<span class="givebox">
 	<a rel="noreferrer noopener" href="<?php echo $gurl;?>">
-	<svg class="vanish" height="125" width="125">
-	<g><rect x="0" y="0" width="125" height="125" fill="#0000aa"></rect>
-	<text x=60 y="65" dominant-baseline="middle" text-anchor="middle" font-family="Unna" 
-	font-size="20" font-weight="bold" fill="white"><?php echo get_theme_mod( 'give_now_text' ); ?></text>
-	</g></svg></a>
+	<?php echo get_theme_mod( 'give_now_text' ); ?>
+	</a></span>
 	<a id="hamburger" 
 			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span>&nbsp;</a>
 </header>
