@@ -30,6 +30,12 @@ Text Domain: thptheme
 
 /* Current customizations being tinkered with */
 
+/* style for contact sheet*/
+.error{ padding: 5px 9px; border: 1px solid red; color: red; border-radius: 3px;}
+.success{padding: 5px 9px; border: 1px solid green; color: green; border-radius: 3px;}
+.contact {font-size:20px; padding:5px; width:80%;}
+
+/* style for Give Now box */
 .givebox {height: 125px; width:125px;
 	background-color:var(--primary);
 	font-size:20px; font-family:Unna; font-weight:bold;
