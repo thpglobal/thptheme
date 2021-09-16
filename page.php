@@ -16,7 +16,7 @@ get_header();
 		<?php if ( has_post_thumbnail() ) { 
 			echo("<div style='position:relative;'>\n");
 			$thpurl=get_the_post_thumbnail_url();
-			echo("<img src='$thpurl' width=100% height=auto>");
+			echo("<img class='fit' src='$thpurl'>");
 			echo("<h1 class='overlay-title'>");
 			the_title();
 			echo("</h1></div>\n");

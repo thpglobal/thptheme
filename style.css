@@ -4,23 +4,19 @@ Theme URI: https://github.com/thpglobal/thptheme
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match thp.org -  
-Version: 1.5
+Version: 1.5.1
 License: GNU General Public License v2 or later
 Text Domain: thptheme
 */
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
 	height: 1px;
 	width: 1px;
 	margin: -1px;
 	padding: 0;
 	border: 0;
 	overflow: hidden;
-	position: absolute !important;
-	word-wrap: normal !important;
 }
 
 /* Define primary colors of this theme */
@@ -86,7 +82,7 @@ blockquote {
 .hovercw:hover {background-color:var(--primary); color:white;}
 .hoverwc:hover {background-color:white; border: 2px solid var(--primary); color:var(--primary);}
 .countup {text-align:center;font-family:sans-serif; font-size:50px;}
-.fit {width:100%; max-width:100%; height:auto; object-fit:contain;}
+.fit {width:100%; max-width:100%; height:auto; object-fit:contain; z-index:-1;}
 .has-cobalt-background-color { background-color: var(--primary);}
 .has-cobalt-color { color: var(--primary);}
 .has-aqua-background-color { background-color: var(--aqua);}
@@ -100,20 +96,14 @@ blockquote {
 .has-lightgray-background-color { background-color: #f8f8f8;}
 
 body {
-	-webkit-font-smoothing: antialiased;
-	margin: 0;
+	padding: 0 1em;
 	color: #000;
 	background: #fff;
 	font-family: 'Source Sans Pro',sans-serif;
 }
 
-p, li { 
-	font-size: 20px;
-	line-height: 1.6;
-}
-
+p, li { font-size: 20px; line-height: 1.6;}
 a { text-decoration: none; }
-
 h1, h2, blockquote {font-family: 'Unna', serif; font-weight: normal; color: var(--primary);}
 h3, h4{ color: var(--primary); font-size:20px; font-weight:bold; line-height:20px;}
 h1 { margin-top: 0; font-size: 60px;}
@@ -122,6 +112,7 @@ h2 {font-size: 45px;}
 .site-header {
 	position: sticky;
 	top:0;
+	z-index: 100;
 	background-color:white;
 	max-width: 1000px;
 	margin: 0 auto;
@@ -133,10 +124,7 @@ h2 {font-size: 45px;}
 	margin-bottom: 35px;
 }
 
-.site-title {
-	margin: 0;
-	font-size: 1.4rem;
-}
+.site-title {margin: 0;font-size: 1.4rem;}
 #hamburger {display:none;}
 
 @media screen and (max-width: 600px){
@@ -172,7 +160,6 @@ h2 {font-size: 45px;}
 	width: 300px;
     list-style-type: none;
     left: 0;
-    z-index: 99999;
     background: #fff;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
