@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/thptheme
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match thp.org -  
-Version: 1.5.1
+Version: 1.5.3
 License: GNU General Public License v2 or later
 Text Domain: thptheme
 */
@@ -39,6 +39,7 @@ Text Domain: thptheme
 	padding:1em;
 }
 .givebox > a {color:white;}
+td {border:1px solid var(--primary); padding:5px;}
 
 .overlay-title {position:absolute; bottom:-45px; left:0; background-color:white; padding-right:15px;}
 .card {box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);}
@@ -121,19 +122,17 @@ h2 {font-size: 45px;}
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 0;
-	margin-bottom: 35px;
 }
 
 .site-title {margin: 0;font-size: 1.4rem;}
 #hamburger {display:none;}
 
 @media screen and (max-width: 600px){
-	.main-navigation .menu {display:none;}
-	.vanish {display:none;}
-	#hamburger {display:block;}
+	.main-navigation .menu {display:none !important; }
+	.givenow {display: none;}
+	#hamburger {display: block;}
 	.site-content {padding:1em;}
 }
-
 
 .main-navigation .menu { list-style: none; display: flex; }
 
