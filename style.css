@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/thptheme
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match thp.org -  
-Version: 1.5.3
+Version: 1.6
 License: GNU General Public License v2 or later
 Text Domain: thptheme
 */
@@ -21,6 +21,7 @@ Text Domain: thptheme
 
 /* Define primary colors of this theme */
 :root {--primary:#0000aa; --aqua:#00bfba; --salmon:#ff6666; --yellow:#ffca05;}
+img {width:100%; height:auto; display:block;}
 
 *, *::before, *::after {box-sizing: border-box;}
 
@@ -83,7 +84,6 @@ blockquote {
 .hovercw:hover {background-color:var(--primary); color:white;}
 .hoverwc:hover {background-color:white; border: 2px solid var(--primary); color:var(--primary);}
 .countup {text-align:center;font-family:sans-serif; font-size:50px;}
-.fit {width:100%; max-width:100%; height:auto; object-fit:contain; z-index:-1;}
 .has-cobalt-background-color { background-color: var(--primary);}
 .has-cobalt-color { color: var(--primary);}
 .has-aqua-background-color { background-color: var(--aqua);}
