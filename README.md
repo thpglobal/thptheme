@@ -1,6 +1,6 @@
-# thptheme
+# thptheme - not for 2022
 
-## Latest as of version 1.3 - Give Now box text and url settable in customizer
+This is a "classic" theme, not a new block-based, full site editing (FSE) theme. We are replacing it with thp2022. Many of the features we created here are now standard in Wordpress 6+
 
 ## Theme for THP websites starting in 2021
 
